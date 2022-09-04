@@ -1,0 +1,20 @@
+<div class="container">
+  <button mat-button routerLink="/" class="back">Voltar</button>
+  <mat-list>
+    <mat-divider></mat-divider>
+    <mat-label>Dono da Fazenda</mat-label>
+    <mat-list-item>{{ ownerFarmName }}</mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-label>Centróide</mat-label>
+    <mat-list-item>{{ farm?.centroid }}</mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-label>Área da fazenda</mat-label>
+    <mat-list-item>{{ farm?.area }}</mat-list-item>
+    <mat-divider></mat-divider>
+  </mat-list>
+
+  <div class="actions">
+    <button mat-button class="cancel" (click)="deleteFarm()">delete</button>
+    <button mat-button class="confirm" routerLink="/edit/{{ farm?.id }}">editar</button>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="container">
+  <button mat-button routerLink="register" class="confirm">Cadastrar</button>
+  <mat-list>
+    <span>Lista de fazendas cadastradas</span>
+    <mat-divider></mat-divider>
+    <a routerLink="/details/{{ farm.id }}" *ngFor="let farm of farms; last as last">
+      <mat-list-item>
+        {{ farm.name }}
+      </mat-list-item>
+      <mat-divider *ngIf="!last"></mat-divider>
+    </a>
+  </mat-list>
+</div>

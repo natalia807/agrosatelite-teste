@@ -1,0 +1,25 @@
+<form action="" [formGroup]="registerOwnerForm">
+  <mat-form-field appearance="outline">
+    <input matInput placeholder="Nome do dono" formControlName="name" name="name" />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <input
+      matInput
+      placeholder="Tipo do documento (CPF ou CNPJ)"
+      formControlName="document_type"
+      name="owner"
+    />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <input matInput placeholder="Número do documento" formControlName="document" name="owner" />
+  </mat-form-field>
+
+  <div class="actions">
+    <button routerLink="/" class="cancel">Cancelar</button>
+    <button mat-button class="confirm" type="submit" (click)="handleCreateOwner()">
+      Confirmar
+    </button>
+  </div>
+</form>

@@ -1,0 +1,29 @@
+button {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+mat-list {
+  border: 2px solid #1f8cb7;
+  border-radius: 1rem;
+}
+
+span {
+  display: block;
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 10px;
+}
+a {
+  text-decoration: none;
+  color: black;
+
+  mat-list-item {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

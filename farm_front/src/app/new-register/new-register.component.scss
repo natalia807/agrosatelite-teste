@@ -1,0 +1,58 @@
+input {
+  height: 70px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  span {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 97%;
+    height: 60px;
+    padding: 10px 5px;
+    background-color: #1f8cb7;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: #1a7294;
+    }
+  }
+
+  .actions {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .newOwner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 97%;
+    height: 60px;
+    border-radius: 5px;
+    font-weight: 700;
+    background-color: #b0d2dc;
+
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: rgb(119, 187, 214);
+    }
+  }
+}

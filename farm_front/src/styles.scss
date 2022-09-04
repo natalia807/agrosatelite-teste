@@ -1,0 +1,63 @@
+body {
+    height: 100vh;
+    margin: 0;
+    color: black;
+    font-family: Roboto, sans-serif;
+}
+
+#mapContainer {
+    height: 100vh;
+}
+
+button {
+    text-decoration: none;
+    border-color: transparent;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+button.cancel {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    width: 11.25rem;
+    height: 2.5rem;
+    padding: 0.62rem;
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: #c51515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color 0.2s;
+
+    &:hover {
+        background-color: #f84e4eb3;
+    }
+}
+
+button.confirm {
+    background-color: #1f8cb7;
+    border-radius: 0.5rem;
+    width: 11.25rem;
+    height: 2.5rem;
+    padding: 0.62rem;
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color 0.2s;
+
+    &:hover {
+        background-color: #1a7294;
+    }
+}
+
+button.confirm:disabled {
+    background-color: #d9f1f3;
+    color: #bbb;
+}
+

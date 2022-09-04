@@ -1,0 +1,29 @@
+mat-label {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.actions {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+mat-divider {
+  margin-bottom: 1rem;
+}
+
+.back {
+  background-color: rgb(190, 183, 183);
+  width: 5rem;
+  margin: 1rem;
+  font-weight: 700;
+  font-size: 1rem;
+
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: rgba(190, 183, 183, 0.802);
+  }
+}
